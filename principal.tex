@@ -4,13 +4,10 @@
 % apenas verso: 
 %\documentclass[12pt,oneside,a4paper,english,french,spanish,brazil]{abntex2}
 
-% ---
+% -------------------------------------------------------------------------------------------------
 % PACOTES
-% ---
-
-% ---
 % Pacotes fundamentais 
-% ---
+
 \usepackage{cmap}				% Mapear caracteres especiais no PDF
 \usepackage{lmodern}			% Usa a fonte Latin Modern
 \usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
@@ -18,32 +15,23 @@
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
-% ---
+% -------------------------------------------------------------------------------------------------
 
-% ---
 % Pacotes adicionais, usados no anexo do modelo de folha de identificação
-% ---
 \usepackage{multicol}
 \usepackage{multirow}
-% ---
+% -------------------------------------------------------------------------------------------------
 	
-% ---
 % Pacotes adicionais, usados apenas no âmbito do Modelo Canônico do abnteX2
-% ---
 \usepackage{lipsum}				% para geração de dummy text
-% ---
+% -------------------------------------------------------------------------------------------------
 
-% ---
 % Pacotes de citações
-% ---
 \usepackage[brazilian,hyperpageref]{backref}	 % Paginas com as citações na bibl
 \usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+% -------------------------------------------------------------------------------------------------
 
-% --- 
 % CONFIGURAÇÕES DE PACOTES
-% --- 
-
-% ---
 % Configurações do pacote backref
 % Usado sem a opção hyperpageref de backref
 \renewcommand{\backrefpagesname}{Citado na(s) página(s):~}
@@ -58,14 +46,13 @@
 	\else
 		Citado #1 vezes nas páginas #2.%
 	\fi}%
-% ---
+% -------------------------------------------------------------------------------------------------
 
-% ---
+
 % Informações de dados para CAPA e FOLHA DE ROSTO
-% ---
 \titulo{ESTUDO DE DESENVOLVIMENTO HÍBRIDO PARA UM SISTEMA DE CONTROLE DE VENDAS PET SHOP}
 \autor{Wesley Gomes da Silva}
-\local{Palmas-TO}
+\local{Palmas - TO}
 \data{2013}
 \instituicao{%
   Faculdade Católica do Tocantins
@@ -76,9 +63,9 @@
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
 \preambulo{Projeto apresentado como requisito parcial para aprovação na disciplina de Estágio Supervisionado I do Curso de Sistemas de Informação, da Faculdade Católica do Tocantins (FACTO), sob a orientação do professor Ms. Marco Antônio Firmino de Sousa.}
-% ---
+% -------------------------------------------------------------------------------------------------
 
-% ---
+
 % Configurações de aparência do PDF final
 
 % alterando o aspecto da cor azul
@@ -101,27 +88,23 @@
 		bookmarksdepth=4
 }
 \makeatother
-% --- 
+% -------------------------------------------------------------------------------------------------
 
-% --- 
 % Espaçamentos entre linhas e parágrafos 
-% --- 
-
 % O tamanho do parágrafo é dado por:
 \setlength{\parindent}{1.3cm}
 
 % Controle do espaçamento entre um parágrafo e outro:
 \setlength{\parskip}{0.2cm}  % tente também \onelineskip
+% -------------------------------------------------------------------------------------------------
 
-% ---
+
 % compila o indice
-% ---
 \makeindex
-% ---
+% -------------------------------------------------------------------------------------------------
 
-% ----
+
 % Início do documento
-% ----
 \begin{document}
 
 % Retira espaço extra obsoleto entre as frases.
@@ -148,53 +131,51 @@
 % ---
 % Anverso da folha de rosto:
 % ---
+% -----------------------------------------------------------------------------------------------
+%{ ver ser exite necessidade de esta aqui.......??????/
+%\ABNTEXchapterfont
+%\vspace*{\fill}
 
-{
-\ABNTEXchapterfont
+%Conforme a ABNT NBR 10719:2011, seção 4.2.1.1.1, o anverso da folha de rosto
+%deve conter:
 
-\vspace*{\fill}
+%\begin{alineas}
+%  \item nome do órgão ou entidade responsável que solicitou ou gerou o
+%   relatório; 
+%  \item título do projeto, programa ou plano que o relatório está relacionado;
+%  \item título do relatório;
+%  \item subtítulo, se houver, deve ser precedido de dois pontos, evidenciando a
+%   sua subordinação ao título. O relatório em vários volumes deve ter um título
+%   geral. Além deste, cada volume pode ter um título específico; 
+%  \item número do volume, se houver mais de um, deve constar em cada folha de
+%   rosto a especificação do respectivo volume, em algarismo arábico; 
+%  \item código de identificação, se houver, recomenda-se que seja formado
+%   pela sigla da instituição, indicação da categoria do relatório, data,
+%  indicação do assunto e número sequencial do relatório na série; 
+%  \item classificação de segurança. Todos os órgãos, privados ou públicos, que
+%   desenvolvam pesquisa de interesse nacional de conteúdo sigiloso, devem
+%    informar a classificação adequada, conforme a legislação em vigor; 
+%  \item nome do autor ou autor-entidade. O título e a qualificação ou a função
+%   do autor podem ser incluídos, pois servem para indicar sua autoridade no
+%   assunto. Caso a instituição que solicitou o relatório seja a mesma que o
+%   gerou, suprime-se o nome da instituição no campo de autoria; 
+%  \item local (cidade) da instituição responsável e/ou solicitante; NOTA: No
+%   caso de cidades homônimas, recomenda-se o acréscimo da sigla da unidade da
+%   federação.
+%  \item ano de publicação, de acordo com o calendário universal (gregoriano),
+%  deve ser apresentado em algarismos arábicos.
+%\end{alineas}
+%\vspace*{\fill}
+%}
+% -------------------------------------------------------------------------------------------------
 
-Conforme a ABNT NBR 10719:2011, seção 4.2.1.1.1, o anverso da folha de rosto
-deve conter:
-
-\begin{alineas}
-  \item nome do órgão ou entidade responsável que solicitou ou gerou o
-   relatório; 
-  \item título do projeto, programa ou plano que o relatório está relacionado;
-  \item título do relatório;
-  \item subtítulo, se houver, deve ser precedido de dois pontos, evidenciando a
-   sua subordinação ao título. O relatório em vários volumes deve ter um título
-   geral. Além deste, cada volume pode ter um título específico; 
-  \item número do volume, se houver mais de um, deve constar em cada folha de
-   rosto a especificação do respectivo volume, em algarismo arábico; 
-  \item código de identificação, se houver, recomenda-se que seja formado
-   pela sigla da instituição, indicação da categoria do relatório, data,
-   indicação do assunto e número sequencial do relatório na série; 
-  \item classificação de segurança. Todos os órgãos, privados ou públicos, que
-   desenvolvam pesquisa de interesse nacional de conteúdo sigiloso, devem
-    informar a classificação adequada, conforme a legislação em vigor; 
-  \item nome do autor ou autor-entidade. O título e a qualificação ou a função
-   do autor podem ser incluídos, pois servem para indicar sua autoridade no
-   assunto. Caso a instituição que solicitou o relatório seja a mesma que o
-   gerou, suprime-se o nome da instituição no campo de autoria; 
-  \item local (cidade) da instituição responsável e/ou solicitante; NOTA: No
-   caso de cidades homônimas, recomenda-se o acréscimo da sigla da unidade da
-   federação.
-  \item ano de publicação, de acordo com o calendário universal (gregoriano),
-  deve ser apresentado em algarismos arábicos.
-\end{alineas}
-
-\vspace*{\fill}
-}
-
-% ---
 % Agradecimentos
 % ---
 \begin{agradecimentos}
 Agradeço primeiramente a Deus pela vida, ao professor Marco Antonio Firmino de Sousa pela orientação e motivação para realizar este trabalho, agradeço em especial a minha família por estar ao meu lado na busca por este sonho e também meus amigos pelo incentivo na realização deste.
 
 \end{agradecimentos}
-% ---
+% -------------------------------------------------------------------------------------------------
 
 % ---
 % RESUMO
@@ -207,56 +188,51 @@ Agradeço primeiramente a Deus pela vida, ao professor Marco Antonio Firmino de 
  \vspace{\onelineskip}
     
  \noindent
- \textbf{Palavras-chaves}: Desenvolvimento híbrido. móvel. pet shop.
+ \textbf{Palavras-chaves}: Desenvolvimento híbrido. Dispositivos  móveis. Pet shop.
 \end{resumo}
-% ---
+% -------------------------------------------------------------------------------------------------
 
-% ---
+
 % inserir lista de ilustrações
-% ---
 \pdfbookmark[0]{\listfigurename}{lof}
 \listoffigures*
 \cleardoublepage
-% ---
+% -------------------------------------------------------------------------------------------------
 
-% ---
+
 % inserir lista de tabelas
-% ---
 \pdfbookmark[0]{\listtablename}{lot}
 \listoftables*
 \cleardoublepage
-% ---
+% -------------------------------------------------------------------------------------------------
 
-% ---
+
 % inserir lista de abreviaturas e siglas
-% ---
 \begin{siglas}
   \item[Fig.] Area of the $i^{th}$ component
   \item[456] Isto é um número
   \item[123] Isto é outro número
   \item[lauro cesar] este é o meu nome
 \end{siglas}
-% ---
+% -------------------------------------------------------------------------------------------------
 
-% ---
+
 % inserir lista de símbolos
-% ---
 \begin{simbolos}
   \item[$ \Gamma $] Letra grega Gama
   \item[$ \Lambda $] Lambda
   \item[$ \zeta $] Letra grega minúscula zeta
   \item[$ \in $] Pertence
 \end{simbolos}
-% ---
+% -------------------------------------------------------------------------------------------------
 
-% ---
+
 % inserir o sumario
-% ---
 %\pdfbookmark[0]{\contentsname}{toc}
 %\tableofcontents*
 \tableofcontents 
 %\cleardoublepage
-% ---
+% -------------------------------------------------------------------------------------------------
 
 
 % ----------------------------------------------------------
@@ -265,9 +241,10 @@ Agradeço primeiramente a Deus pela vida, ao professor Marco Antonio Firmino de 
 \textual
 
 % ----------------------------------------------------------
-% Introdução
+% Capitulo Introdução
 % ----------------------------------------------------------
 \chapter*[Introdução]{Introdução}
+\section*{Contexto}
 \addcontentsline{toc}{chapter}{Introdução}
 
 Nos últimos anos, com o advento dos dispositivos portáteis a nível mundial, houve um crescimento gigantesco de aplicações web mobile, principalmente no meio coorporativo, na utilização de soluções móveis. Devido a tamanha evolução, novas plataformas de desenvolvimento e sistemas operacionais foram criados, aumentando a complexidade e muitas vezes a curva de aprendizado. Um dos maiores problemas com a disparidade entre plataformas é, a manutenção da aplicação, controle de atualizações e custeamento de equipes de desenvolvimento com conhecimentos específicos, como: Android, iOS, BlackBerry, Windows Phone, etc.
@@ -275,16 +252,18 @@ As WebApps, são aplicações projetadas para serem executadas em browsers de di
 
 
 % ----------------------------------------------------------
-% Objetivos
+% Capitulo Desenvolvimento
 % ----------------------------------------------------------
-\chapter*{Objetivos}
+\chapter*{Desenvolvimento}
+
+% Sessao Objetivo Geral
 \section*{Objetivo Geral}
 
 Este trabalho tem como objetivo realizar um estudo sistemático de conceitos relacionados ao desenvolvimento de aplicações híbridas para dispositivos móveis. Baseado nas necessidades reais de uma empresa de pet shop, que enfrenta problemas como, conciliar todas as atividades da empresa, tendo o cliente que assumi o papel de gerente e veterinário ao mesmo tempo.
 Baseado em tal relato o objetivo principal desse trabalho e pesquisar técnicas de como desenvolver um sistema híbrido para diversas plataformas onde possa gerenciar toda a demanda da empresa de pet shop desde um checklist de produtos feito por um vendedor externo até a finalização de um pedido seja na empresa do cliente ou em qualquer outro lugar através dos aplicativos móveis.
 
-% ----------------------------------------------------------
-% Objetivo Especifico
+% -------------------------------------------------------------------------------------------------
+% Sessao Objetivo Especifico
 \section*{Objetivo Específico}
 \begin{itemize}
 \item Realizar um estudo sobre o processo de desenvolvimento de aplicações móveis, utilizando tecnologia híbrida.
@@ -293,21 +272,45 @@ Baseado em tal relato o objetivo principal desse trabalho e pesquisar técnicas 
 \item Realizar um estudo para a construção com praticidade e desempenho de um sistema híbrido que ajudará no controle de uma loja pet shop.
 \item Relatar como funciona uma organização deste ramo e as vantagens de um sistema de integração.
 \end{itemize}
-% ----------------------------------------------------------
+% -------------------------------------------------------------------------------------------------
 
-%Capitulo Motivação
-\chapter*{Motivação}
+%Sessao Motivação
+\section*{Motivação}
 Em geral obter o maior grau de conhecimento possível sobre os conceitos de desenvolvimento híbrido e futuramente está pondo em pratica todo o conhecimento adquirido neste trabalho. 
-% ----------------------------------------------------------
+% -------------------------------------------------------------------------------------------------
 
-%Capitulo justificativa
-\chapter*{Justificativa}
+%Sessao justificativa
+\section*{Justificativa}
 Existem, atualmente, paradigmas principais que norteiam o desenvolvimento de soluções móveis: web, nativo e híbrido. Escolher o melhor é sempre um exercício que exige atenção aos mínimos detalhes.
 Baseados nesses paradigmas de desenvolvimento para aplicativos híbridos adotamos esses paradigmas, para uma empresa de pet shop, desenvolvendo uma nova interação entre diversas plataformas, onde vendedores externos e clientes terão acesso a mais informações com mais facilidade, abordando os três paradigmas de desenvolvimento, devido à utilização da linguagem JavaScript, presente em quase todos os frameworks de desenvolvimento, os resultados sempre são significativos em termos de tempo de desenvolvimento do aplicativo, padronização de código, além da praticidade do desenvolvimento.
-% ----------------------------------------------------------
+% -------------------------------------------------------------------------------------------------
 
 
-%Continuar aqui......
+%Sessao Procedimentos Experimentais
+\section*{Procedimentos Experimentais}
+
+Como base para análise utilizarei três software de gerenciamento de vendas para empresas pet shop.
+
+\begin{itemize}
+\item Tesche \& Vasconcelos empresa localizada em Poços de Caldas – MG, responsável pelo software PetSystem que trabalha com controle de vendas de produtos para clínica veterinária e pet shop.
+\item NetService Consultoria em Sistemas empresa localizada em Gurupi – TO, responsável pelo software PDVtab que trabalha no controle de vendas de produtos para pet shop.
+\item \textbf{Falta Ultimo Software??????}
+\end{itemize}
+
+\subsection*{Analise Software PetSystem}
+desenvolver análise sobre o software .....
+
+\subsection*{Analise Software PDVtab}
+desenvolver análise sobre o software .....
+
+%falta o ultimo software para análise.
+\subsection*{FALTA ULTIMO SOFTWARE??????}
+desenvolver análise sobre o software .....
+
+
+
+
+%CONTINUA........
 
 
 % Capitulo com exemplos de comandos inseridos de arquivo externo 
