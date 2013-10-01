@@ -62,7 +62,7 @@
 \tipotrabalho{Relatório Final de Estágio}
 % O preambulo deve conter o tipo do trabalho, o objetivo, 
 % o nome da instituição e a área de concentração 
-\preambulo{Projeto apresentado como requisito parcial para aprovação na disciplina de Estágio Supervisionado I do Curso de Sistemas de Informação, da Faculdade Católica do Tocantins (FACTO), sob a orientação do professor Ms. Marco Antônio Firmino de Sousa.}
+\preambulo{Projeto apresentado como requisito parcial para aprovação na disciplina de Estágio Supervisionado I do Curso de Sistemas de Informação, da Faculdade Católica do Tocantins (FACTO), sob a orientação do professor MsC. Marco Antônio Firmino de Sousa.}
 % -------------------------------------------------------------------------------------------------
 
 
@@ -172,6 +172,7 @@
 % Agradecimentos
 % ---
 \begin{agradecimentos}
+% Não quer mais agradecer? Use o tempo verbal adequado: Agradeço em primeiro... no lugar de Gostaria de agradecer...
 Gostaria de agradecer em primeiro lugar a Deus o meu grande guia, por ter me abençoado com a chance de cursar em uma grande faculdade como a CATOLICA DO TOCANTINS - FACTO e ter recebido subsídios tão ricos durante essa jornada, ao professor Marco Antonio Firmino de Sousa pela orientação e motivação para realização deste trabalho, agradeço em especial a minha família por estar ao meu lado na busca por este sonho e também aos meus amigos que souberam conviver e respeitar ainda que nem sempre compartilhássemos as mesmas idéias. E por tudo, a saudade há de ficar.
 
 \end{agradecimentos}
@@ -183,7 +184,8 @@ Gostaria de agradecer em primeiro lugar a Deus o meu grande guia, por ter me abe
 
 % resumo na língua vernácula (obrigatório)
 \begin{resumo}
- Desenvolvimento híbridos é uma área que está em ascensão no âmbito mundial, com isso muitos serviços virão para aproveitar o conceito de mobilidade e acessibilidade. Os dispositivos móveis são os responsáveis por este crescimento, pois eles estão cada vez mais presentes na vida das pessoas. Neste trabalho foi pesquisado formas de desenvolvimento de um aplicativo móvel para o gerenciamento de vendas e compras de uma empresa pet shop. Foi desenvolvido também um estudo técnico sobre alguns sistemas relacionado para que possa abstrair algumas funcionalidades dos mesmos e também melhorar algumas já existentes.
+% Pela leitura do resumo não consigo compreender o que é ou foi feito. Foco no contexto, na aplicação. As técnicas e ferramentas são coisas de segundo plano. Não abuse de vocabulário coloquial. Seja um pouco mais formal.
+Desenvolvimento híbridos é uma área que está em ascensão no âmbito mundial, com isso muitos serviços virão para aproveitar o conceito de mobilidade e acessibilidade. Os dispositivos móveis são os responsáveis por este crescimento, pois eles estão cada vez mais presentes na vida das pessoas. Neste trabalho foi pesquisado formas de desenvolvimento de um aplicativo móvel para o gerenciamento de vendas e compras de uma empresa pet shop. Foi desenvolvido também um estudo técnico sobre alguns sistemas relacionado para que possa abstrair algumas funcionalidades dos mesmos e também melhorar algumas já existentes.
 
  \vspace{\onelineskip}
     
@@ -192,6 +194,7 @@ Gostaria de agradecer em primeiro lugar a Deus o meu grande guia, por ter me abe
 \end{resumo}
 % -------------------------------------------------------------------------------------------------
 
+% Inserir somente os ítens que houver conteúdo. Veja que a lista de figuras, tabelas e lista de abreviaturas estão em branco.
 
 % inserir lista de ilustrações
 \pdfbookmark[0]{\listfigurename}{lof}
@@ -246,18 +249,21 @@ Gostaria de agradecer em primeiro lugar a Deus o meu grande guia, por ter me abe
 \chapter*[Introdução]{Introdução}
 \section*{Contexto}
 \addcontentsline{toc}{chapter}{Introdução}
+% seja mais profunco, pq a sociedade precisa de mobilidade? pq há tanto dispositivo móvel? Responda isso por aqui.
 
 Nos últimos anos, com o advento dos dispositivos portáteis a nível mundial, houve um crescimento gigantesco de aplicações web mobile, principalmente no meio coorporativo, na utilização de soluções móveis. Devido a tamanha evolução, novas plataformas de desenvolvimento e sistemas operacionais foram criados, aumentando a complexidade e muitas vezes a curva de aprendizado. Um dos maiores problemas com a disparidade entre plataformas é, a manutenção da aplicação, controle de atualizações e custeamento de equipes de desenvolvimento com conhecimentos específicos, como: Android, iOS, BlackBerry, Windows Phone, etc.
 As WebApps, são aplicações projetadas para serem executadas em browsers de dispositivos móveis, que acoplada em novas técnicas de desenvolvimento com determinados frameworks estão se tornando os nomeados Web Apps Híbridos. Ou seja, a sua interface gráfica é adaptada para dispositivos com telas menores, utilizando conceitos como o responsive (são web sites que através de técnicas de construção do HTML5 e CSS, é possível termos a versão de um site que se modifique conforme o dispositivo utilizadocom excelente visualização em plataformas e resoluções diferentes). Estas aplicações podem ser acessado de qualquer computador ou dispositivo móvel por meio de um browser conectado à internet, na maior parte, são hospedadas em servidores web, utilizando tecnologias específicas para serem carregadas, em máquinas de “baixo” processamento e normalmente com baixa velocidade de banda da rede.
 
+% Não tenho foco em detalhes técnicos. Nosso curso é atividade meio e é interessante que seu trabalho seja assim. Seu objetivo não é desenvolver técnica, mas uma aplicação para uso em um contexto na sociedade. Explique isso! Detalhe técnico você tratará mais adiante.
 
 % ----------------------------------------------------------
 % Capitulo Desenvolvimento
 % ----------------------------------------------------------
 \chapter*{Desenvolvimento}
-
+% No desenvolvimento você detalha tudo que fez.
 % Sessao Objetivo Geral
 \section*{Objetivo Geral}
+% Objetivo faz parte da introdução.
 
 Este trabalho tem como objetivo realizar um estudo sistemático de conceitos relacionados ao desenvolvimento de aplicações híbridas para dispositivos móveis. Baseado nas necessidades reais de uma empresa de pet shop, que enfrenta problemas como, conciliar todas as atividades da empresa, tendo o cliente que assumi o papel de gerente e veterinário ao mesmo tempo.
 Baseado em tal relato o objetivo principal desse trabalho e pesquisar técnicas de como desenvolver um sistema híbrido para diversas plataformas onde possa gerenciar toda a demanda da empresa de pet shop desde um checklist de produtos feito por um vendedor externo até a finalização de um pedido seja na empresa do cliente ou em qualquer outro lugar através dos aplicativos móveis, assim otimizando o tempo de compra dos consumidores.
@@ -284,7 +290,7 @@ Existem, atualmente, paradigmas principais que norteiam o desenvolvimento de sol
 Baseados nesses paradigmas de desenvolvimento para aplicativos híbridos adotamos esses paradigmas, para uma empresa de pet shop, desenvolvendo uma nova interação entre diversas plataformas, onde vendedores externos e clientes terão acesso a mais informações com mais facilidade, abordando os três paradigmas de desenvolvimento, devido à utilização da linguagem JavaScript, presente em quase todos os frameworks de desenvolvimento, os resultados sempre são significativos em termos de tempo de desenvolvimento do aplicativo, padronização de código, além da praticidade do desenvolvimento.
 % -------------------------------------------------------------------------------------------------
 
-
+% Vamos nos reunir para ordenas todas as seções de seu trabalho.
 %Sessao Procedimentos Experimentais
 \section*{Procedimentos Experimentais}
 
