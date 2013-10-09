@@ -173,7 +173,8 @@
 % ---
 \begin{agradecimentos}
 % Não quer mais agradecer? Use o tempo verbal adequado: Agradeço em primeiro... no lugar de Gostaria de agradecer...
-Gostaria de agradecer em primeiro lugar a Deus o meu grande guia, por ter me abençoado com a chance de cursar em uma grande faculdade como a CATOLICA DO TOCANTINS - FACTO e ter recebido subsídios tão ricos durante essa jornada, ao professor Marco Antonio Firmino de Sousa pela orientação e motivação para realização deste trabalho, agradeço em especial a minha família por estar ao meu lado na busca por este sonho e também aos meus amigos que souberam conviver e respeitar ainda que nem sempre compartilhássemos as mesmas idéias. E por tudo, a saudade há de ficar.
+%Ok!!!!
+Agradeço em primeiro lugar a Deus o meu grande guia, por ter me abençoado com a chance de cursar em uma grande faculdade como a CATOLICA DO TOCANTINS - FACTO e ter recebido subsídios tão ricos durante essa jornada, ao professor Marco Antonio Firmino de Sousa pela orientação e motivação para realização deste trabalho, agradeço em especial a minha família por estar ao meu lado na busca por este sonho e também aos meus amigos que souberam conviver e respeitar ainda que nem sempre compartilhássemos as mesmas idéias. E por tudo, a saudade há de ficar.
 
 \end{agradecimentos}
 % -------------------------------------------------------------------------------------------------
@@ -185,7 +186,8 @@ Gostaria de agradecer em primeiro lugar a Deus o meu grande guia, por ter me abe
 % resumo na língua vernácula (obrigatório)
 \begin{resumo}
 % Pela leitura do resumo não consigo compreender o que é ou foi feito. Foco no contexto, na aplicação. As técnicas e ferramentas são coisas de segundo plano. Não abuse de vocabulário coloquial. Seja um pouco mais formal.
-Desenvolvimento híbridos é uma área que está em ascensão no âmbito mundial, com isso muitos serviços virão para aproveitar o conceito de mobilidade e acessibilidade. Os dispositivos móveis são os responsáveis por este crescimento, pois eles estão cada vez mais presentes na vida das pessoas. Neste trabalho foi pesquisado formas de desenvolvimento de um aplicativo móvel para o gerenciamento de vendas e compras de uma empresa pet shop. Foi desenvolvido também um estudo técnico sobre alguns sistemas relacionado para que possa abstrair algumas funcionalidades dos mesmos e também melhorar algumas já existentes.
+Desenvolvimento híbridos é uma área que está em ascensão no âmbito mundial, com isso muitos serviços virão para aproveitar o conceito de mobilidade e acessibilidade. Os dispositivos móveis são os responsáveis por este crescimento, pois eles estão cada vez mais presentes na vida das pessoas. Neste trabalho foi desenvolvido uma análise tecinas em 3 software voltado para o ramo de pet shop, onde será descrito suas principais funcionalidades, 
+assim identificando falhas, que poderção ser corrigidas e melhorando algumas funcionalidades já existentes em um novo software proposto para desenvolvimento futuro.
 
  \vspace{\onelineskip}
     
@@ -257,10 +259,7 @@ As WebApps, são aplicações projetadas para serem executadas em browsers de di
 % Não tenho foco em detalhes técnicos. Nosso curso é atividade meio e é interessante que seu trabalho seja assim. Seu objetivo não é desenvolver técnica, mas uma aplicação para uso em um contexto na sociedade. Explique isso! Detalhe técnico você tratará mais adiante.
 
 % ----------------------------------------------------------
-% Capitulo Desenvolvimento
-% ----------------------------------------------------------
-\chapter*{Desenvolvimento}
-% No desenvolvimento você detalha tudo que fez.
+
 % Sessao Objetivo Geral
 \section*{Objetivo Geral}
 % Objetivo faz parte da introdução.
@@ -292,7 +291,7 @@ Baseados nesses paradigmas de desenvolvimento para aplicativos híbridos adotamo
 
 % Vamos nos reunir para ordenas todas as seções de seu trabalho.
 %Sessao Procedimentos Experimentais
-\section*{Procedimentos Experimentais}
+\chapter*{Procedimentos Experimentais}
 
 Como base para análise utilizarei três software de gerenciamento de vendas para empresas pet shop.
 
@@ -302,14 +301,63 @@ Como base para análise utilizarei três software de gerenciamento de vendas par
 \item Pet Shop Control é um software desenvolvido pela Devsol Softwares localizada em Porto Alegre - RS, que permite administrar sua pet shop e clínica veterinária auxiliando no gerenciamento de todos os setores de sua empresa.
 \end{itemize}
 
-\subsection*{Analise Software PetSystem}
-desenvolver análise sobre o software .....
+\section*{Analise Software PetSystem}
+Por se tratar de um software executável será necessário efetuar o download no site: http://www.tvsistemas.com.br/downloads.html. O PetSystem é uma ferramenta desenvolvida exclusivamente para Pet Shops e clínicas veterinárias. Com diversas funcionalidades, você terá acesso a funcionalidades como: Cadastro de clientes, animais, fornecedores, controle de contas a pagar e a receber, controle bancário, agendamento de tratamentos, caixa diário, relatórios personalizados, controle de usuários. A seguir uma lista com as principais funcionalidades de cada versão e características relacionada para o entendimento mais profundo do software.
 
-\subsection*{Analise Software PDVtab}
-desenvolver análise sobre o software .....
 
-%falta o ultimo software para análise.
-\subsection*{Analise Software Pet Shop Control}
+\textbf{1.	{Permissão de acesso}}\\
+Após efetuar o login no sistema, será necessário inserir permissões de acesso aos funcionários como: cadastro de produtos, cadastro de ordem de serviço, cadastro de fornecedores entre outros. A vantagens nesse serviço é o controle de acesso e restrições a serviços do sistema.
+
+\textbf{2.	{Cadastro de Vendedores}}\\
+Nesta opção vamos armazenar no sistema todos os vendedores da empresa, caso não utilize ao menos um vendedor é necessário para o sistema, você pode cadastrar neste o nome do vendedor como loja (se for o caso). A vantagens nessa função de cadastro serve exatamente para controle de vendedores específicos.
+
+\textbf{3.	{Cadastro de Categorias de Clientes}}\\
+O objetivo do Cadastro de Categorias do PETSYSTEM é criar grupo de perfil para seus clientes e fornecedores. Caso não deseje trabalhar com categorias é necessário criar ao menos uma para cadastro. O objetivo dessa função e criar categorias de clientes.
+
+\textbf{4.	{Cadastrar Cliente}}\\
+O objetivo desse cadastro de cliente e armazenar os dados dos clientes como:
+Animais:\\ 
+Tem por objetivo de apenas demonstrar quais animais foram cadastrados para este cliente, caso desejar cadastrar um novo Animal, poderá clicar no botão F5: Animais.
+Restrições:\\ 
+Podemos ver as opções de bloqueio de cliente, é importante ressaltar que nestes campos ao selecionar Não significa que o cliente está sem restrições.
+Financeiro:\\ 
+Pode determinar um dia padrão para os vencimentos deste cliente.
+Histórico:\\ 
+Temos os campos, Última compra e Valor Compras AC são campos são alimentados automaticamente pelo sistema.
+
+\textbf{5.	{Orçamento}}\\
+O usuário poderá efetuar orçamentos de diversos produtos em um formulário único contendo todos os dados dos produtos e do cliente, podendo assim efetuar a impressão e/ou exportar para um diretório especifico.
+Alguns campos que serão apresentando no formulário são: Código do vendedor, código do cliente, situação do orçamento, itens do orçamento, valor do item, total do orçamento, observações, desconto unitário, desconto total, entre outros.
+
+\textbf{6.	{Romaneio de Rotas de Cargas}}\\
+Romaneio de rotas consiste em criar rotas para entregas de produtos, que é dividida em duas etapas, o primeiro passo será criar as rotas do romaneio, a segunda consiste na emissão do romaneio:
+Criação de Rotas:\\
+Será necessário apenas que preencha as informações da rota como por exemplo o código da rota (número), descrição, o veículo e também a placa e selecionar o funcionário. Nesta janela é obrigatório o preenchimento apenas do número da rota e descrição, os dados de veículo, as observações não são obrigatórias.
+Montagem do Romaneio:\\
+Após a criação das rotas e feito a montagem da rota com os produtos, em uma nova janela adicionando os seguintes item: data da carga, data da saída e do retorno, número de sua venda, número da nota fiscal, para finalizar o cadastro do romaneio clique no botão incluir, para que possa ser impresso a rota de entrega do produto. A vantagem dessa operação consiste em criar e controlar entregas de produtos, gerando uma rota para os entregadores, facilitando seu trabalho.
+
+\textbf{7.	{Centro de Custos }}\\
+Através do centro de custo podemos agrupar nossos históricos. Um exemplo para isto é a necessidade de visualizar todas as despesas fixas no mês. Ao invés de verificar uma a uma nós podemos agrupar elas em um centro de custo e depois visualizar o total de todas estas despesas em um único relatório. A vantagens dessa funcionalidade está em agrupar relatórios tanto de despesas quanto de lucros.
+
+\textbf{8.	{Centro de Custos }}\\
+Na tela Agenda, fica armazenado todos os futuros atendimentos e compromissos da empresa. A vantagem está no controle dos compromisso da empresa como: Consultas, banhos, tosa entre outros.
+
+\textbf{9.	{Clinica}}\\
+Atendimento:\\
+Em atendimento irá reunir as informações indicadas em todo histórico de atendimento do animal, assim como oferece o recurso para registrar o novo atendimento registrando o prontuário. A vantagem nessa opção consiste em agendar um atendimento a um determinado animal.\\
+Receituário:\\
+Nesta janela poderá prescrever as receitas para os animais, assim como inserir textos rápidos de recomendações anteriormente cadastradas no sistema. A vantagem está em imprimir uma receita para o animal.
+
+
+Com algumas das principais funcionalidades descritas acima, observamos com detalhes o funcionamento do software PetSystem. Funcionalidades que auxiliam funcionários a trabalhar de forma correta, dando mais agilidade no processo de gerenciamento da organização.
+
+
+
+\section*{Analise Software PDVtab}
+\textbf{desenvolver análise sobre o software .....}
+
+
+\section*{Analise Software Pet Shop Control}
 O pet shop control é um software que permite administrar sua pet shop e clínica veterinária auxiliando no gerenciamento de todos os setores de sua empresa. Através de relatórios de análises financeiras, suas decisões serão tomadas com maior segurança e precisão. Desta maneira, você conquistará uma fatia muito maior do mercado, expandindo seu negócio e aumentando seus lucros. O software pode se adaptar ao seu negócio, preservando o diferencial de mercado e seus métodos de trabalho.
 A seguir uma lista com as principais funcionalidades e características relacionada para o entendimento mais profundo.
 
