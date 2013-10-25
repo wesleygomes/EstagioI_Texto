@@ -15,6 +15,7 @@
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
+\graphicspath{{imagens/}}
 % -------------------------------------------------------------------------------------------------
 
 % Pacotes adicionais, usados no anexo do modelo de folha de identificação
@@ -186,8 +187,8 @@ Agradeço em primeiro lugar a Deus o meu grande guia, por ter me abençoado com 
 % resumo na língua vernácula (obrigatório)
 \begin{resumo}
 % Pela leitura do resumo não consigo compreender o que é ou foi feito. Foco no contexto, na aplicação. As técnicas e ferramentas são coisas de segundo plano. Não abuse de vocabulário coloquial. Seja um pouco mais formal.
-Desenvolvimento híbridos é uma área que está em ascensão no âmbito mundial, com isso muitos serviços virão para aproveitar o conceito de mobilidade e acessibilidade. Os dispositivos móveis são os responsáveis por este crescimento, pois eles estão cada vez mais presentes na vida das pessoas. Neste trabalho foi desenvolvido uma análise tecinas em 3 software voltado para o ramo de pet shop, onde será descrito suas principais funcionalidades, 
-assim identificando falhas, que poderção ser corrigidas e melhorando algumas funcionalidades já existentes em um novo software proposto para desenvolvimento futuro.
+%OK!!
+Desenvolvimento de aplicações móvies é uma área que está em ascensão no âmbito mundial, com isso muitos serviços virão para aproveitar o conceito de mobilidade e acessibilidade. Os dispositivos móveis são os responsáveis por este crescimento, pois eles estão cada vez mais presentes na vida das pessoas. Neste trabalho foi desenvolvido uma análise tecinas em 3 software voltado para o ramo de pet shop, onde será descrito uma tabela com os requisitos funcionais e nao-funcionais e cada software e suas principais funcionalidades, assim identificando falhas, que poderão ser corrigidas e melhorandas, e os requisitos proposto para ser desenvolvido em um novo software proposto para desenvolvimento futuro.
 
  \vspace{\onelineskip}
     
@@ -263,6 +264,7 @@ As WebApps, são aplicações projetadas para serem executadas em browsers de di
 % Sessao Objetivo Geral
 \section*{Objetivo Geral}
 % Objetivo faz parte da introdução.
+%OK!
 
 Este trabalho tem como objetivo realizar um estudo sistemático de conceitos relacionados ao desenvolvimento de aplicações híbridas para dispositivos móveis. Baseado nas necessidades reais de uma empresa de pet shop, que enfrenta problemas como, conciliar todas as atividades da empresa, tendo o cliente que assumi o papel de gerente e veterinário ao mesmo tempo.
 Baseado em tal relato o objetivo principal desse trabalho e pesquisar técnicas de como desenvolver um sistema híbrido para diversas plataformas onde possa gerenciar toda a demanda da empresa de pet shop desde um checklist de produtos feito por um vendedor externo até a finalização de um pedido seja na empresa do cliente ou em qualquer outro lugar através dos aplicativos móveis, assim otimizando o tempo de compra dos consumidores.
@@ -289,9 +291,8 @@ Existem, atualmente, paradigmas principais que norteiam o desenvolvimento de sol
 Baseados nesses paradigmas de desenvolvimento para aplicativos híbridos adotamos esses paradigmas, para uma empresa de pet shop, desenvolvendo uma nova interação entre diversas plataformas, onde vendedores externos e clientes terão acesso a mais informações com mais facilidade, abordando os três paradigmas de desenvolvimento, devido à utilização da linguagem JavaScript, presente em quase todos os frameworks de desenvolvimento, os resultados sempre são significativos em termos de tempo de desenvolvimento do aplicativo, padronização de código, além da praticidade do desenvolvimento.
 % -------------------------------------------------------------------------------------------------
 
-% Vamos nos reunir para ordenas todas as seções de seu trabalho.
 %Sessao Procedimentos Experimentais
-\chapter*{Procedimentos Experimentais}
+\chapter*{Pesquisa Bibliografica}
 
 Como base para análise utilizarei três software de gerenciamento de vendas para empresas pet shop.
 
@@ -301,9 +302,9 @@ Como base para análise utilizarei três software de gerenciamento de vendas par
 \item Pet Shop Control é um software desenvolvido pela Devsol Softwares localizada em Porto Alegre - RS, que permite administrar sua pet shop e clínica veterinária auxiliando no gerenciamento de todos os setores de sua empresa.
 \end{itemize}
 
+% análise do primeiro software petsystem
 \section*{Analise Software PetSystem}
-Por se tratar de um software executável será necessário efetuar o download no site: http://www.tvsistemas.com.br/downloads.html. O PetSystem é uma ferramenta desenvolvida exclusivamente para Pet Shops e clínicas veterinárias. Com diversas funcionalidades, você terá acesso a funcionalidades como: Cadastro de clientes, animais, fornecedores, controle de contas a pagar e a receber, controle bancário, agendamento de tratamentos, caixa diário, relatórios personalizados, controle de usuários. A seguir uma lista com as principais funcionalidades de cada versão e características relacionada para o entendimento mais profundo do software.
-
+O PetSystem é uma ferramenta desenvolvida exclusivamente para Pet Shops e clínicas veterinárias. Com diversas funcionalidades, você terá acesso a funcionalidades como: Cadastro de clientes, animais, fornecedores, controle de contas a pagar e a receber, controle bancário, agendamento de tratamentos, caixa diário, relatórios personalizados, controle de usuários. A seguir uma lista com as principais funcionalidades de cada versão e características relacionada para o entendimento mais profundo do software.
 
 \textbf{1.	{Permissão de acesso}}\\
 Após efetuar o login no sistema, será necessário inserir permissões de acesso aos funcionários como: cadastro de produtos, cadastro de ordem de serviço, cadastro de fornecedores entre outros. A vantagens nesse serviço é o controle de acesso e restrições a serviços do sistema.
@@ -352,11 +353,61 @@ Nesta janela poderá prescrever as receitas para os animais, assim como inserir 
 Com algumas das principais funcionalidades descritas acima, observamos com detalhes o funcionamento do software PetSystem. Funcionalidades que auxiliam funcionários a trabalhar de forma correta, dando mais agilidade no processo de gerenciamento da organização.
 
 
-
+% análise do segundo software PDVtab
 \section*{Analise Software PDVtab}
-\textbf{desenvolver análise sobre o software .....}
+O PDVtab é uma ferramenta desenvolvida exclusivamente para Pet Shops e clínicas veterinárias. Com diversas funcionalidades como: Cadastro de clientes, controle de contas a pagar e a receber, controle bancário, agendamento de tratamentos, caixa diário, relatórios personalizados, controle de usuários. A seguir uma lista com as principais funcionalidades do software.\\
+\textbf{1.	{Cadastro Cliente}}\\
+Existem várias funções que contemplam o cadastro de cliente, como conferência de assinatura, obtenção/gravação de assinatura para conferência, foto do cliente, Google Maps para localização do cliente (a eficácia do serviço depente exclusivamente do Goolgle Maps), Controle de Visita. A vantagens nesse cadastro que além dos dados dos clientes, e possível ver a localização do cliente, e um histórico de visitas dos mesmos.\\
+\textbf{2.	{Função Vendas}}\\
+A função de vendas é simplificada de forma que o usuário conhece todas as funcionalidades. É através da função vendas que o usuário poderá confeccionar um orçamento, ou seja, em uma mesma tela o usuário poderá: efetuar vendas, cadastrar cliente e efetuar um orçamento. A vantagens nessa função e agilidade e rapidez no processo, com apenas uma função e possível efetuar vendas, orçamentos e cadastrar clientes.\\
+\textbf{3.	{Lançamento de Nota Fiscal}}\\
+A vantagens nesse processo e a importação da nota fiscal através de um arquivo XML enviado pelo fornecedor, poupando assim de ter que digitar todos os produtos no lançamento.\\
 
+%imagem nota fiscal
+\begin{figure}[htb!]
+\includegraphics[scale=0.5]{nota_fiscal} 
+\centering
+\caption{Lançamento de entrada com a importação dos dados do XML do fornecedor}
+\label{img_nota_fiscal}
+\end{figure}
 
+\textbf{4.	{Gráfico de Vendas e Serviços}}\\
+A vantagem desse relatório utilizando gráficos do tipo pizza, e que mostra claramente o índice de lucro do total produtos e serviços vendidos durante um determinado período.
+
+%imagem grafico de vendas e serviços
+\begin{figure}[htb!]
+\includegraphics[scale=0.6]{grafico_vendas_servico} 
+\centering
+\caption{Gráfico que apresenta em forma de pizza a participação dos serviços sobre o total vendido}
+\label{img_grafico_vendas_servico}
+\end{figure}
+
+%nova pagina começa aqui.
+\newpage
+
+\textbf{5.	{Gráfico de Despesas Operacionais}}\\
+A grande vantagens desse tipo de relatório mostra claramente ao cliente quais os meses que houve mais despesas operacionais, assim ajudando futuramente na tomada de decisão da empresa.
+
+%imagem grafico de despesas operacionais
+\begin{figure}[htb!]
+\includegraphics[scale=0.7]{grafico_despesa_operacional} 
+\centering
+\caption{Através desde gráfico o usuário pode acompanhar despesas operacionais}
+\label{img_grafico_despesa_operacional}
+\end{figure}
+
+\textbf{6.	{Resultado Operacional e Financeiro}}\\
+A grande vantagens nesse relatório e que lista todas as despesas e lucros obtido pela empresa durante um determinado período, possibilitando assim que a tomada de decisão seja mais segura e confiante.
+
+%imagem relatorio operacional e financeiro
+\begin{figure}[htb!]
+\includegraphics[scale=0.4]{relatorio_operacional_financeiro} 
+\centering
+\caption{Um dos principais relatórios para tomada de decisão}
+\label{img_operacional_financeiro}
+\end{figure}
+
+% análise do terceiro software Pet Shop Control
 \section*{Analise Software Pet Shop Control}
 O pet shop control é um software que permite administrar sua pet shop e clínica veterinária auxiliando no gerenciamento de todos os setores de sua empresa. Através de relatórios de análises financeiras, suas decisões serão tomadas com maior segurança e precisão. Desta maneira, você conquistará uma fatia muito maior do mercado, expandindo seu negócio e aumentando seus lucros. O software pode se adaptar ao seu negócio, preservando o diferencial de mercado e seus métodos de trabalho.
 A seguir uma lista com as principais funcionalidades e características relacionada para o entendimento mais profundo.
@@ -447,11 +498,11 @@ Com algumas das principais funcionalidades descritas acima, observamos com detal
 % ELEMENTOS PÓS-TEXTUAIS
 % ----------------------------------------------------------
 \postextual
-
+\cite{@}
 % ----------------------------------------------------------
 % Referências bibliográficas
 % ----------------------------------------------------------
-\bibliography{abntex2-modelo-references}
+\bibliography{referencias}
 
 % ----------------------------------------------------------
 % Glossário
