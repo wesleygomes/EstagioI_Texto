@@ -15,6 +15,7 @@
 \usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
 \usepackage{color}				% Controle das cores
 \usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{lscape}
 \graphicspath{{imagens/}}
 % -------------------------------------------------------------------------------------------------
 
@@ -444,6 +445,8 @@ Com algumas das principais funcionalidades descritas acima, observamos com detal
 \section*{Requisitos Funcionais}
 Logo abaixo uma tabela representando todos os requisitos funcionais e dos três software analisado e do software proposto para ser desenvolvido futuramente.
 
+\newpage
+\begin{landscape}
 %tabela dos requisitos funcionais
 \begin{table}[!htpb]
 \centering
@@ -486,6 +489,23 @@ Logo abaixo uma tabela representando todos os requisitos funcionais e dos três 
     RFC0031 & Gerar Receita & x & x & x & x \\
     RFC0032 & Pagar Cirurgia & x & x & x & - \\
     RFC0033 & Pagar Consulta & x & x & x & - \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:addlabel}%
+\end{small}
+%%\caption{Requisitos Funcionais}\label{tab_requisitosFuncionais}
+\end{table}
+\newpage
+
+%tabela dos requisitos funcionais
+\begin{table}[!htpb]
+\centering
+\begin{small} 
+\setlength{\tabcolsep}{3pt} 
+\begin{tabular}{rccccc}
+    \toprule
+    \multicolumn{1}{c}{\textbf{ID}} & \textbf{Descrição} & \textbf{PetSystem} & \textbf{PDVtab} & \textbf{PetControl} & \textbf{Software Proposto} \\
+    \midrule
     RFC0034 & Pagar Funcionário & x & x & x & x \\
     RFC0035 & Pagar Internamento & x & x & x & - \\
     RFC0036 & Pagar Tosa/Banho & x & x & x & - \\
@@ -499,6 +519,7 @@ Logo abaixo uma tabela representando todos os requisitos funcionais e dos três 
 \end{small}
 \caption{Requisitos Funcionais}\label{tab_requisitosFuncionais}
 \end{table}
+\end{landscape}
 %-----------------------------------------------------------------------------------------------------------------
 
 % tabela de requisitos nao funcionais dos softwares
