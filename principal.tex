@@ -173,8 +173,6 @@
 % Agradecimentos
 % ---
 \begin{agradecimentos}
-% Não quer mais agradecer? Use o tempo verbal adequado: Agradeço em primeiro... no lugar de Gostaria de agradecer...
-%Ok!!!!
 Agradeço em primeiro lugar a Deus o meu grande guia, por ter me abençoado com a chance de cursar em uma grande faculdade como a CATOLICA DO TOCANTINS - FACTO e ter recebido subsídios tão ricos durante essa jornada, ao professor Marco Antonio Firmino de Sousa pela orientação e motivação para realização deste trabalho, agradeço em especial a minha família por estar ao meu lado na busca por este sonho e também aos meus amigos que souberam conviver e respeitar ainda que nem sempre compartilhássemos as mesmas idéias. E por tudo, a saudade há de ficar.
 
 \end{agradecimentos}
@@ -183,12 +181,9 @@ Agradeço em primeiro lugar a Deus o meu grande guia, por ter me abençoado com 
 % ---
 % RESUMO
 % ---
-
-% resumo na língua vernácula (obrigatório)
 \begin{resumo}
-% Pela leitura do resumo não consigo compreender o que é ou foi feito. Foco no contexto, na aplicação. As técnicas e ferramentas são coisas de segundo plano. Não abuse de vocabulário coloquial. Seja um pouco mais formal.
-%OK!!
-Desenvolvimento de aplicações móvies é uma área que está em ascensão no âmbito mundial, com isso muitos serviços virão para aproveitar o conceito de mobilidade e acessibilidade. Os dispositivos móveis são os responsáveis por este crescimento, pois eles estão cada vez mais presentes na vida das pessoas. Neste trabalho foi desenvolvido uma análise tecinas em 3 software voltado para o ramo de pet shop, onde será descrito uma tabela com os requisitos funcionais e nao-funcionais e cada software e suas principais funcionalidades, assim identificando falhas, que poderão ser corrigidas e melhorandas, e os requisitos proposto para ser desenvolvido em um novo software proposto para desenvolvimento futuro.
+Desenvolvimento de aplicações móvies é uma área que está em ascensão no âmbito mundial, com isso muitos serviços virão para aproveitar o conceito de mobilidade e acessibilidade. Os dispositivos móveis são os responsáveis por este crescimento, pois eles estão cada vez mais presentes na vida das pessoas. O presente trabalho descreve uma análise técnicas em 3 softwares voltado para o ramo de pet shop, onde será apresentado uma tabela com os requisitos funcionais e não-funcionais de cada software, e em seguida uma descrição de suas principais funcionalidades afim de identificar falhas que poderão ser corrigidas e melhorandas em um novo software proposto para desenvolvimento futuro.
+
 
  \vspace{\onelineskip}
     
@@ -212,24 +207,22 @@ Desenvolvimento de aplicações móvies é uma área que está em ascensão no �
 \cleardoublepage
 % -------------------------------------------------------------------------------------------------
 
-
 % inserir lista de abreviaturas e siglas
-\begin{siglas}
-  \item[Fig.] Area of the $i^{th}$ component
-  \item[456] Isto é um número
-  \item[123] Isto é outro número
-  \item[lauro cesar] este é o meu nome
-\end{siglas}
+%\begin{siglas}
+% \item[Fig.] Area of the $i^{th}$ component
+%  \item[456] Isto é um número
+%  \item[123] Isto é outro número
+%  \item[lauro cesar] este é o meu nome
+%\end{siglas}
 % -------------------------------------------------------------------------------------------------
 
-
 % inserir lista de símbolos
-\begin{simbolos}
-  \item[$ \Gamma $] Letra grega Gama
-  \item[$ \Lambda $] Lambda
-  \item[$ \zeta $] Letra grega minúscula zeta
-  \item[$ \in $] Pertence
-\end{simbolos}
+%\begin{simbolos}
+%  \item[$ \Gamma $] Letra grega Gama
+%  \item[$ \Lambda $] Lambda
+%  \item[$ \zeta $] Letra grega minúscula zeta
+%  \item[$ \in $] Pertence
+%\end{simbolos}
 % -------------------------------------------------------------------------------------------------
 
 
@@ -253,9 +246,10 @@ Desenvolvimento de aplicações móvies é uma área que está em ascensão no �
 \section*{Contexto}
 \addcontentsline{toc}{chapter}{Introdução}
 % seja mais profunco, pq a sociedade precisa de mobilidade? pq há tanto dispositivo móvel? Responda isso por aqui.
-
-Nos últimos anos, com o advento dos dispositivos portáteis a nível mundial, houve um crescimento gigantesco de aplicações web mobile, principalmente no meio coorporativo, na utilização de soluções móveis. Devido a tamanha evolução, novas plataformas de desenvolvimento e sistemas operacionais foram criados, aumentando a complexidade e muitas vezes a curva de aprendizado. Um dos maiores problemas com a disparidade entre plataformas é, a manutenção da aplicação, controle de atualizações e custeamento de equipes de desenvolvimento com conhecimentos específicos, como: Android, iOS, BlackBerry, Windows Phone, etc.
-As WebApps, são aplicações projetadas para serem executadas em browsers de dispositivos móveis, que acoplada em novas técnicas de desenvolvimento com determinados frameworks estão se tornando os nomeados Web Apps Híbridos. Ou seja, a sua interface gráfica é adaptada para dispositivos com telas menores, utilizando conceitos como o responsive (são web sites que através de técnicas de construção do HTML5 e CSS, é possível termos a versão de um site que se modifique conforme o dispositivo utilizadocom excelente visualização em plataformas e resoluções diferentes). Estas aplicações podem ser acessado de qualquer computador ou dispositivo móvel por meio de um browser conectado à internet, na maior parte, são hospedadas em servidores web, utilizando tecnologias específicas para serem carregadas, em máquinas de “baixo” processamento e normalmente com baixa velocidade de banda da rede.
+Nos últimos anos, com o advento dos dispositivos portáteis a nível mundial, houve um crescimento gigantesco de aplicações web mobile, principalmente no meio coorporativo, na utilização de soluções móveis para mercado cooporativo. Devido a tamanha evolução, novas plataformas de desenvolvimento e sistemas operacionais foram criados, aumentando a complexidade e muitas vezes a curva de aprendizado. Um dos maiores problemas com a disparidade entre plataformas é, a manutenção da aplicação, controle de atualizações e custeamento de equipes de desenvolvimento com conhecimentos específicos, como: Android, iOS, BlackBerry, Windows Phone, etc.
+As WebApps, são aplicações projetadas para serem executadas em diversos dispositivos móveis de diferentes sistemas operacionais se tornando os nomeados Web Apps Híbridos. Ou seja, a sua interface gráfica é adaptada para dispositivos com telas menores, utilizando conceitos como o responsive (são web sites que através de técnicas de construção do HTML5 e CSS, é possível termos a versão de um site que se modifique conforme o dispositivo utilizado com excelente visualização em plataformas e resoluções diferentes). Estas aplicações podem ser acessado de qualquer computador ou dispositivo móvel por meio de um browser conectado à internet, utilizando tecnologias específicas para serem carregadas em máquinas de “baixo” processamento e normalmente com baixa velocidade de banda da rede.\\
+De acordo com a Anfalpet, em 2009 o Brasil tinha pelo menos 100 mil lojas de produtos direcionados aos animais de estimação. Desse total, 40 mil eram pet shops, lojas especializadas em oferecer produtos e serviços para animais de pequeno e médio porte. Em 2005, segundo pesquisas, esse número era de apenas 9 mil pontos. \cite{Sebrae2011}.\\
+Com o desenvolviemnto desse software a grande vantagens será que além ser acessada por qualquer computador também poderá acessada por dispositivos móveis aumentando assim a quantidade de dispositivos e clientes atingidos contribuindo para que a empresa possa expandir mais seus clientes e negócios.
 
 % Não tenho foco em detalhes técnicos. Nosso curso é atividade meio e é interessante que seu trabalho seja assim. Seu objetivo não é desenvolver técnica, mas uma aplicação para uso em um contexto na sociedade. Explique isso! Detalhe técnico você tratará mais adiante.
 
@@ -263,9 +257,6 @@ As WebApps, são aplicações projetadas para serem executadas em browsers de di
 
 % Sessao Objetivo Geral
 \section*{Objetivo Geral}
-% Objetivo faz parte da introdução.
-%OK!
-
 Este trabalho tem como objetivo realizar um estudo sistemático de conceitos relacionados ao desenvolvimento de aplicações híbridas para dispositivos móveis. Baseado nas necessidades reais de uma empresa de pet shop, que enfrenta problemas como, conciliar todas as atividades da empresa, tendo o cliente que assumi o papel de gerente e veterinário ao mesmo tempo.
 Baseado em tal relato o objetivo principal desse trabalho e pesquisar técnicas de como desenvolver um sistema híbrido para diversas plataformas onde possa gerenciar toda a demanda da empresa de pet shop desde um checklist de produtos feito por um vendedor externo até a finalização de um pedido seja na empresa do cliente ou em qualquer outro lugar através dos aplicativos móveis, assim otimizando o tempo de compra dos consumidores.
 
@@ -292,7 +283,7 @@ Baseados nesses paradigmas de desenvolvimento para aplicativos híbridos adotamo
 % -------------------------------------------------------------------------------------------------
 
 %Sessao Procedimentos Experimentais
-\chapter*{Pesquisa Bibliografica}
+\chapter*[Pesquisa Bibliográfica]{Pesquisa Bibliográfica}
 
 Como base para análise utilizarei três software de gerenciamento de vendas para empresas pet shop.
 
@@ -448,8 +439,156 @@ Através do envio de mala-direta aos clientes é possível divulgar sua empresa 
  
 
 Com algumas das principais funcionalidades descritas acima, observamos com detalhes o funcionamento do software Pet Shop Control. Funcionalidades que auxiliam funcionários a trabalhar de forma correta e dando mais agilidade no processo de gerenciamento da organização.
+\newpage
+% tabela de requisitos dos softwares
+\section*{Requisitos Funcionais}
+Logo abaixo uma tabela representando todos os requisitos funcionais e dos três software analisado e do software proposto para ser desenvolvido futuramente.
+
+%tabela dos requisitos funcionais
+\begin{table}[!htpb]
+\centering
+\begin{small} 
+\setlength{\tabcolsep}{3pt} 
+\begin{tabular}{rccccc}
+    \toprule
+    \multicolumn{1}{c}{\textbf{ID}} & \textbf{Descrição} & \textbf{PetSystem} & \textbf{PDVtab} & \textbf{PetControl} & \textbf{Software Proposto} \\
+    \midrule
+    RFC0001 & Cadastrar Animal & x & x & x & x \\
+    RFC0002 & Cadastrar Proprietário & x & x & x & x \\
+    RFC0003 & Buscar Animal & x & x & x & x \\
+    RFC0004 & Busca Proprietário & x & x & x & x \\
+    RFC0005 & Alterar Animal & x & x & x & x \\
+    RFC0006 & Alterar Proprietário & x & x & x & x \\
+    RFC0007 & Remover Animal & x & x & x & x \\
+    RFC0008 & Remover Proprietário & x & x & x & x \\
+    RFC0009 & Cadastrar Consulta & x & x & x & - \\
+    RFC0010 & Cadastrar Cirurgia & x & x & x & - \\
+    RFC0011 & Cadastrar Vacinação & x & x & x & - \\
+    RFC0012 & Cadastrar Internação & x & x & x & - \\
+    RFC0013 & Gerar Receita (da consulta) & x & x & x & - \\
+    RFC0014 & Cadastrar tosa/banho & x & x & x & - \\
+    RFC0015 & Registrar que vacinação já foi administrada & x & x & x & - \\
+    RFC0016 & Gerar relatório (animais a serem vacinados) & x & x & x & - \\
+    RFC0017 & Gerar relatório (internamento) & x & x & x & - \\
+    RFC0018 & Gerar fatura Cirurgia & x & x & x & - \\
+    RFC0019 & Gerar fatura Consulta & x & x & x & - \\
+    RFC0020 & Gerar fatura Internamento & x & x & x & - \\
+    RFC0021 & Gerar fatura tosa/Banho & x & x & x & - \\
+    RFC0022 & Cadastrar Produto & x & x & x & x \\
+    RFC0023 & Buscar Produto (por nome) & x & x & x & x \\
+    RFC0024 & Buscar Produto (por fornecedor) & x & x & x & x \\
+    RFC0025 & Registrar compra de Produto & x & x & x & X \\
+    RFC0026 & Registrar venda de Produto & x & x & x & x \\
+    RFC0027 & Aviso: Produto acabando & x & x & x & x \\
+    RFC0028 & Gerar fatura Venda & x & x & x & x \\
+    RFC0029 & Cadastrar Funcionário & x & x & x & x \\
+    RFC0030 & Registrar compra de utilidades da veterinária & x & x & x & x \\
+    RFC0031 & Gerar Receita & x & x & x & x \\
+    RFC0032 & Pagar Cirurgia & x & x & x & - \\
+    RFC0033 & Pagar Consulta & x & x & x & - \\
+    RFC0034 & Pagar Funcionário & x & x & x & x \\
+    RFC0035 & Pagar Internamento & x & x & x & - \\
+    RFC0036 & Pagar Tosa/Banho & x & x & x & - \\
+    RFC0037 & Pagar Venda & x & x & x & x \\
+    RFC0038 & Registrar hora-extra & x & x & x & x \\
+    RFC0039 & Cadastro de Rotas de Cargas & x & - & - & x \\
+    RFC0040 & Localizar endereço no mapa & - & x & - & x \\
+    \bottomrule
+    \end{tabular}%
+  \label{tab:addlabel}%
+\end{small}
+\caption{Requisitos Funcionais}\label{tab_requisitosFuncionais}
+\end{table}
+%-----------------------------------------------------------------------------------------------------------------
+
+% tabela de requisitos nao funcionais dos softwares
+\section*{Requisitos Não-Funcionais}
+
+Foram identificados alguns requisitos não-funcionais. Logo abaixo uma tabela representando todos os requisitos não-funcionais dos três software analisado e do software proposto para ser desenvolvido futuramente.
+
+%tabela de requisito nao-funional de segurança
+\begin{table}[htbp]
+\centering
+    \begin{tabular}{c|c|c|c|c|cc|}
+    \toprule
+    \multicolumn{6}{r}{\textbf{Segurança}} \\
+    \midrule
+    \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Descrição}} & \multicolumn{1}{c}{\textbf{PetSystem}} & \multicolumn{1}{c}{\textbf{PDVtab}} & \multicolumn{1}{c}{\textbf{PetControl}} & \multicolumn{1}{c}{\textbf{Software Proposto}} \\
+    RNF/SEG-01 &  \resizebox{!}{0,2cm}{ A secretária terá acesso as funções de cadastro de animais e controle de caixa} & x & x & x & x \\
+    RNF/SEG-02 & O veterinário terá acesso as funções de cadastramento de animais & x & x & x & - \\
+    RNF/SEG-03 & O vendedor(a) terá acesso as funções de controle de estoque & x & x & x & x \\
+    RNF/SEG-04 & O dono terá acesso à todas funcionalidades & x & x & x & x \\
+    \bottomrule
+    \end{tabular}%
+      \caption{Requitito não-funcional de Segurança}\label{tab:RNF_SEG}%
+\end{table}%
+%-----------------------------------------------------------------------------------------------------------------
+
+%tabela de requisito nao-funional de performace
+\begin{table}[htbp]
+  \centering
+    \begin{tabular}{r|r|r|r|r|rr|}
+    \toprule
+    \multicolumn{6}{r}{\textbf{Performace}} \\
+    \midrule
+    \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Descrição}} & \multicolumn{1}{c}{\textbf{PetSystem}} & \multicolumn{1}{c}{\textbf{PDVtab}} & \multicolumn{1}{c}{\textbf{PetControl}} & \multicolumn{1}{c}{\textbf{Software Proposto}} \\
+    RNF/PER-05 & O tempo de retorno das consultas (isto é, o intervalo de tempo entre qualquer consulta e seu resultado) não pode ser maior do que 4 segundos & x & x & x & x \\
+    RNF/PER-06 & O tempo de retorno do sistema fora do ar não pode ser maior do que 24 horas & x & x & x & x \\
+    RNF/PER-07 & Deve ter comunicação WLAN (WI-FI) com comunicação direta com o servidor de aplicação no ambiente de uso dos tablets. Observação: a WLAN deve ter propagação em toda à região em que se pretende usar a aplicação via tablete & - & x & - & x \\
+    RNF/PER-08 & O tablet deve ter a versão mínima do Windows 8 mobile & - & x & - & - \\
+    \bottomrule
+    \end{tabular}%
+      \caption{Requitito não-funcional de Segurança}\label{tab:RNF_SEG}%
+\end{table}%
+%-----------------------------------------------------------------------------------------------------------------
+
+%tabela de requisito nao-funional de usabilidade
+\begin{table}[htbp]
+  \centering
+    \begin{tabular}{r|r|r|r|r|rr|}
+    \toprule
+    \multicolumn{6}{r}{\textbf{Usabilidade}} \\
+    \midrule
+    \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Descrição}} & \multicolumn{1}{c}{\textbf{PetSystem}} & \multicolumn{1}{c}{\textbf{PDVtab}} & \multicolumn{1}{c}{\textbf{PetControl}} & \multicolumn{1}{c}{\textbf{Software Proposto}} \\
+    RNF/USA-09 & O tratamento de exceções deverá facilitar eventuais manutenções no sistema & x & x & x & x \\
+    RNF/USA-10 & O sistema usará uma interface intuitiva que permitirá a utilização do sistema com toda sua potencialidade em um curto espaço de tempo e beneficiará o trabalho dos usuários & x & x & x & x \\
+    \bottomrule
+    \end{tabular}%
+      \caption{Requitito não-funcional de Segurança}\label{tab:RNF_SEG}%
+\end{table}%
+%-----------------------------------------------------------------------------------------------------------------
 
 
+%tabela de requisito nao-funional de Manutenabilidade
+\begin{table}[htbp]
+  \centering
+    \begin{tabular}{r|r|r|r|r|rr|}
+    \toprule
+    \multicolumn{6}{r}{\textbf{Manutenabilidade}} \\
+    \midrule
+    \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Descrição}} & \multicolumn{1}{c}{\textbf{PetSystem}} & \multicolumn{1}{c}{\textbf{PDVtab}} & \multicolumn{1}{c}{\textbf{PetControl}} & \multicolumn{1}{c}{\textbf{Software Proposto}} \\
+    RNF/MAN-11 & O sistema será dividido em módulos, de modo que as atualizações serão feitas mais rapidamente e sem a necessidade de longos períodos de atualização onde o sistema ficaria impossibilitado de operar & - & - & x & x \\
+    \bottomrule
+    \end{tabular}%
+      \caption{Requitito não-funcional de Manutenabilidade}\label{tab:RNF_MAN}%
+\end{table}%
+%-----------------------------------------------------------------------------------------------------------------
+
+
+%tabela de requisito nao-funional de Documentação
+\begin{table}[htbp]
+  \centering
+    \begin{tabular}{r|r|r|r|r|rr|}
+    \toprule
+    \multicolumn{6}{r}{\textbf{Documentação}} \\
+    \midrule
+    \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Descrição}} & \multicolumn{1}{c}{\textbf{PetSystem}} & \multicolumn{1}{c}{\textbf{PDVtab}} & \multicolumn{1}{c}{\textbf{PetControl}} & \multicolumn{1}{c}{\textbf{Software Proposto}} \\
+    RNF/DOC-12 & O sistema possuirá um manual de uso a fim de auxiliar os diferentes tipos de usuário. O mesmo explicará detalhadamente como proceder na realização das funções requisitadas para a aplicação & x & x & x & x \\
+    \bottomrule
+    \end{tabular}%
+      \caption{Requitito não-funcional de Documentação}\label{tab:RNF_DOC}%
+\end{table}%
+%-----------------------------------------------------------------------------------------------------------------
 
 
 
@@ -481,7 +620,7 @@ Com algumas das principais funcionalidades descritas acima, observamos com detal
 \lipsum[2-3]
 
 % ---
-% Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
+ Finaliza a parte no bookmark do PDF, para que se inicie o bookmark na raiz
 % ---
 \bookmarksetup{startatroot}% 
 % ---
@@ -531,8 +670,8 @@ Com algumas das principais funcionalidades descritas acima, observamos com detal
 \lipsum[50]
 
 % ----------------------------------------------------------
-\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
-ac pretium ante justo a nulla curabitur tristique arcu eu metus}
+%\chapter{Nullam elementum urna vel imperdiet sodales elit ipsum pharetra ligula
+%ac pretium ante justo a nulla curabitur tristique arcu eu metus}
 % ----------------------------------------------------------
 \lipsum[55-57]
 
@@ -547,85 +686,85 @@ ac pretium ante justo a nulla curabitur tristique arcu eu metus}
 % ---
 % Inicia os anexos
 % ---
-\begin{anexosenv}
+%\begin{anexosenv}
 
 % Imprime uma página indicando o início dos anexos
-\partanexos
+%\partanexos
 
 % ---
-\chapter{Morbi ultrices rutrum lorem.}
+%\chapter{Morbi ultrices rutrum lorem.}
 % ---
-\lipsum[30]
+%\lipsum[30]
 
 % ---
-\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
-parturient montes nascetur ridiculus mus}
+%\chapter{Cras non urna sed feugiat cum sociis natoque penatibus et magnis dis
+%parturient montes nascetur ridiculus mus}
 % ---
 
-\lipsum[31]
+%\lipsum[31]
 
 % ---
-\chapter{Fusce facilisis lacinia dui}
+%\chapter{Fusce facilisis lacinia dui}
 % ---
 
-\lipsum[32]
+%\lipsum[32]
 
-\end{anexosenv}
+%\end{anexosenv}
 
 %---------------------------------------------------------------------
 % INDICE REMISSIVO
 %---------------------------------------------------------------------
 
-\printindex
+%\printindex
 
 %---------------------------------------------------------------------
 % Formulário de Identificação (opcional)
 %---------------------------------------------------------------------
-\chapter*[Formulário de Identificação]{Formulário de Identificação}
-\addcontentsline{toc}{chapter}{Exemplo de Formulário de Identificação}
-\label{formulado-identificacao}
+%\chapter*[Formulário de Identificação]{Formulário de Identificação}
+%\addcontentsline{toc}{chapter}{Exemplo de Formulário de Identificação}
+%\label{formulado-identificacao}
 
-Exemplo de Formulário de Identificação, compatível com o Anexo A (informativo)
-da ABNT NBR 10719:2011. Este formulário não é um anexo. Conforme definido na
-norma, ele é o último elemento pós-textual e opcional do relatório.
+%Exemplo de Formulário de Identificação, compatível com o Anexo A (informativo)
+%da ABNT NBR 10719:2011. Este formulário não é um anexo. Conforme definido na
+%norma, ele é o último elemento pós-textual e opcional do relatório.
 
-\bigskip
+%\bigskip
 
-\begin{tabular}{|p{9cm}|p{5cm}|}
-\hline
-\multicolumn{2}{|c|}{\textbf{\large Dados do Relatório Técnico e/ou científico}}\\
-\hline
-\multirow{4}{10cm}[24pt]{Título e subtítulo}& Classificação de segurança\\
-                   & \\
-                   \cline{2-2}
-                   & No.\\
-                   & \\
+%\begin{tabular}{|p{9cm}|p{5cm}|}
+%\hline
+%\multicolumn{2}{|c|}{\textbf{\large Dados do Relatório Técnico e/ou científico}}\\
+%\hline
+%\multirow{4}{10cm}[24pt]{Título e subtítulo}& Classificação de segurança\\
+%                   & \\
+%                   \cline{2-2}
+%                   & No.\\
+%                   & \\
 				
-\hline
-Tipo de relatório & Data\\
-\hline
-Título do projeto/programa/plano & No.\\
-\hline
-\multicolumn{2}{|l|}{Autor(es)} \\
-\hline
-\multicolumn{2}{|l|}{Instituição executora e endereço completo} \\
-\hline
-\multicolumn{2}{|l|}{Instituição patrocinadora e endereço completo} \\
-\hline
-\multicolumn{2}{|l|}{Resumo}\\[3cm]
-\hline
-\multicolumn{2}{|l|}{Palavras-chave/descritores}\\
-\hline
-\multicolumn{2}{|l|}{
-Edição \hfill No. de páginas \hfill No. do volume \hfill Nº de classificação \phantom{XXXX}} \\
-\hline
-\multicolumn{2}{|l|}{
-ISSN \hfill \hfill Tiragem \hfill Preço \phantom{XXXXXXXX}} \\
-\hline
-\multicolumn{2}{|l|}{Distribuidor} \\
-\hline
-\multicolumn{2}{|l|}{Observações/notas}\\[3cm]
-\hline
-\end{tabular}
+%\hline
+%Tipo de relatório & Data\\
+%\hline
+%Título do projeto/programa/plano & No.\\
+%\hline
+%\multicolumn{2}{|l|}{Autor(es)} \\
+%\hline
+%\multicolumn{2}{|l|}{Instituição executora e endereço completo} \\
+%\hline
+%\multicolumn{2}{|l|}{Instituição patrocinadora e endereço completo} \\
+%\hline
+%\multicolumn{2}{|l|}{Resumo}\\[3cm]
+%\hline
+%\multicolumn{2}{|l|}{Palavras-chave/descritores}\\
+%\hline
+%\multicolumn{2}{|l|}{
+%Edição \hfill No. de páginas \hfill No. do volume \hfill Nº de classificação \phantom{XXXX}} \\
+%\hline
+%\multicolumn{2}{|l|}{
+%ISSN \hfill \hfill Tiragem \hfill Preço \phantom{XXXXXXXX}} \\
+%\hline
+%\multicolumn{2}{|l|}{Distribuidor} \\
+%\hline
+%\multicolumn{2}{|l|}{Observações/notas}\\[3cm]
+%\hline
+%\end{tabular}
 
 \end{document}
