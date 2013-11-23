@@ -222,7 +222,7 @@ Com o desenvolviemnto desse software a grande vantagens será que além ser aces
 % Sessao Objetivo Geral
 \section*{Objetivo Geral}
 Este trabalho tem como objetivo realizar um estudo sistemático de conceitos relacionados ao desenvolvimento de aplicações híbridas para dispositivos móveis. Baseado nas necessidades reais de uma empresa de pet shop, que enfrenta problemas como, conciliar todas as atividades da empresa, tendo o cliente que assumi o papel de gerente e veterinário ao mesmo tempo.
-Baseado em tal relato o objetivo principal desse trabalho e pesquisar técnicas de como desenvolver um sistema híbrido para diversas plataformas onde possa gerenciar toda a demanda da empresa de pet shop desde um checklist de produtos feito por um vendedor externo até a finalização de um pedido seja na empresa do cliente ou em qualquer outro lugar através dos aplicativos móveis, assim otimizando o tempo de compra dos consumidores.
+Baseado em tal relato o objetivo principal desse trabalho e pesquisar como desenvolver um sistema híbrido para diversas plataformas onde possa gerenciar toda a demanda da empresa de pet shop desde um checklist de produtos feito por um vendedor externo até a finalização de um pedido seja na empresa do cliente ou em qualquer outro lugar através dos aplicativos móveis, assim otimizando o tempo de compra dos consumidores.
 
 % -------------------------------------------------------------------------------------------------
 % Sessao Objetivo Especifico
@@ -230,7 +230,7 @@ Baseado em tal relato o objetivo principal desse trabalho e pesquisar técnicas 
 \begin{itemize}
 \item Realizar um estudo sobre o processo de desenvolvimento de aplicações móveis, utilizando tecnologia híbrida.
 \item Realizar um estudo teórico dos tipos de aplicativos móveis, suas principais características, vantagens e desvantagens.
-\item Realizar um estudo para a construção com praticidade e desempenho de um sistema híbrido que ajudará no controle de uma loja pet shop.
+\item Realizar uma análise técnica de três softwares do ramo, com o intuído de descobrir funcionalidades que possam agregar no software proposto.
 \item Relatar como funciona uma organização deste ramo e as vantagens de um sistema de integração.
 \end{itemize}
 % -------------------------------------------------------------------------------------------------
@@ -496,7 +496,7 @@ Logo abaixo uma tabela representando todos os requisitos funcionais e dos três 
 % tabela de requisitos nao funcionais dos softwares
 \section*{Requisitos Não-Funcionais}
 
-Foram identificados alguns requisitos não-funcionais. Logo abaixo algumas tabelas representando todos os requisitos não-funcionais dos três software analisado e do software proposto para ser desenvolvido futuramente.
+Foram identificados alguns requisitos não-funcionais. Logo abaixo tabelas representando todos os requisitos não-funcionais dos três software analisado e do software proposto para ser desenvolvido futuramente.
 \newpage
 
 %tabela dos requisitos nao-funcionais de segurança
@@ -511,10 +511,10 @@ Foram identificados alguns requisitos não-funcionais. Logo abaixo algumas tabel
     \multicolumn{6}{r}{\textbf{Segurança}} \\
     \midrule
     \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Descrição}} & \multicolumn{1}{c}{\textbf{PetSystem}} & \multicolumn{1}{c}{\textbf{PDVtab}} & \multicolumn{1}{c}{\textbf{PetControl}} & \multicolumn{1}{c}{\textbf{Software Proposto}} \\
-    RNF/SEG-01 & A secretária terá acesso as funções de cadastro de animais e controle de caixa & x & x & x & x \\
-    RNF/SEG-02 & O veterinário terá acesso as funções de cadastramento de animais & x & x & x & - \\
-    RNF/SEG-03 & O vendedor(a) terá acesso as funções de controle de estoque & x & x & x & x \\
-    RNF/SEG-04 & O dono terá acesso à todas funcionalidades & x & x & x & x \\
+    RNF/SEG-01 & A secretária terá acesso as funções de cadastro de animais e controle de caixa. & x & x & x & x \\
+    RNF/SEG-02 & O veterinário terá acesso as funções de cadastramento de animais. & x & x & x & - \\
+    RNF/SEG-03 & O vendedor(a) terá acesso as funções de controle de estoque. & x & x & x & x \\
+    RNF/SEG-04 & O dono terá acesso à todas funcionalidades. & x & x & x & x \\
     \bottomrule
  \end{tabular}%
 \end{small}
@@ -532,10 +532,10 @@ Foram identificados alguns requisitos não-funcionais. Logo abaixo algumas tabel
     \multicolumn{6}{r}{\textbf{Performace}} \\
     \midrule
     \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Descrição}} & \multicolumn{1}{c}{\textbf{PetSystem}} & \multicolumn{1}{c}{\textbf{PDVtab}} & \multicolumn{1}{c}{\textbf{PetControl}} & \multicolumn{1}{c}{\textbf{Software Proposto}} \\
-    RNF/PER-05 & O tempo de retorno das consultas (isto é, o intervalo de tempo entre qualquer consulta e seu resultado) não pode ser maior do que 4 segundos & x & x & x & x \\
-    RNF/PER-06 & O tempo de retorno do sistema fora do ar não pode ser maior do que 24 horas & x & x & x & x \\
-    RNF/PER-07 & Deve ter comunicação WLAN (WI-FI) com comunicação direta com o servidor de aplicação no ambiente de uso dos tablets. Observação: a WLAN deve ter propagação em toda à região em que se pretende usar a aplicação via tablete & - & x & - & x \\
-    RNF/PER-08 & O tablet deve ter a versão mínima do Windows 8 mobile & - & x & - & - \\
+    RNF/PER-05 & O tempo de retorno das consultas (isto é, o intervalo de tempo entre qualquer consulta e seu resultado) não pode ser maior do que 4 segundos. & x & x & x & x \\
+    RNF/PER-06 & O tempo de retorno do sistema fora do ar não pode ser maior do que 24 horas. & x & x & x & x \\
+    RNF/PER-07 & Deve ter comunicação WLAN (WI-FI) com comunicação direta com o servidor de aplicação no ambiente de uso dos tablets. Observação: a WLAN deve ter propagação em toda à região em que se pretende usar a aplicação via tablete. & - & x & - & x \\
+    RNF/PER-08 & O tablet deve ter a versão mínima do Windows 8 mobile. & - & x & - & - \\
     \bottomrule
 \end{tabular}%
 \end{small}
@@ -556,8 +556,8 @@ Foram identificados alguns requisitos não-funcionais. Logo abaixo algumas tabel
     \multicolumn{6}{r}{\textbf{Usabilidade}} \\
     \midrule
     \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Descrição}} & \multicolumn{1}{c}{\textbf{PetSystem}} & \multicolumn{1}{c}{\textbf{PDVtab}} & \multicolumn{1}{c}{\textbf{PetControl}} & \multicolumn{1}{c}{\textbf{Software Proposto}} \\
-    RNF/USA-09 & O tratamento de exceções deverá facilitar eventuais manutenções no sistema & x & x & x & x \\
-    RNF/USA-10 & O sistema usará uma interface intuitiva que permitirá a utilização do sistema com toda sua potencialidade em um curto espaço de tempo e beneficiará o trabalho dos usuários & x & x & x & x \\
+    RNF/USA-09 & O tratamento de exceções deverá facilitar eventuais manutenções no sistema. & x & x & x & x \\
+    RNF/USA-10 & O sistema usará uma interface intuitiva que permitirá a utilização do sistema com toda sua potencialidade em um curto espaço de tempo e beneficiará o trabalho dos usuários. & x & x & x & x \\
     \bottomrule
 \end{tabular}%
 \end{small}
@@ -574,7 +574,7 @@ Foram identificados alguns requisitos não-funcionais. Logo abaixo algumas tabel
     \multicolumn{6}{r}{\textbf{Manutenabilidade}} \\
     \midrule
     \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Descrição}} & \multicolumn{1}{c}{\textbf{PetSystem}} & \multicolumn{1}{c}{\textbf{PDVtab}} & \multicolumn{1}{c}{\textbf{PetControl}} & \multicolumn{1}{c}{\textbf{Software Proposto}} \\
-    RNF/MAN-11 & O sistema será dividido em módulos, de modo que as atualizações serão feitas mais rapidamente e sem a necessidade de longos períodos de atualização onde o sistema ficaria impossibilitado de operar & - & - & x & x \\
+    RNF/MAN-11 & O sistema será dividido em módulos, de modo que as atualizações serão feitas mais rapidamente e sem a necessidade de longos períodos de atualização onde o sistema ficaria impossibilitado de operar. & - & - & x & x \\
     \bottomrule
 \end{tabular}%
 \end{small}
@@ -591,7 +591,7 @@ Foram identificados alguns requisitos não-funcionais. Logo abaixo algumas tabel
     \multicolumn{6}{r}{\textbf{Documentação}} \\
     \midrule
     \multicolumn{1}{c}{\textbf{ID}} & \multicolumn{1}{c}{\textbf{Descrição}} & \multicolumn{1}{c}{\textbf{PetSystem}} & \multicolumn{1}{c}{\textbf{PDVtab}} & \multicolumn{1}{c}{\textbf{PetControl}} & \multicolumn{1}{c}{\textbf{Software Proposto}} \\
-    RNF/DOC-12 & O sistema possuirá um manual de uso a fim de auxiliar os diferentes tipos de usuário. O mesmo explicará detalhadamente como proceder na realização das funções requisitadas para a aplicação & x & x & x & x \\
+    RNF/DOC-12 & O sistema possuirá um manual de uso a fim de auxiliar os diferentes tipos de usuário. O mesmo explicará detalhadamente como proceder na realização das funções requisitadas para a aplicação. & x & x & x & x \\
     \bottomrule
 \end{tabular}%
 \end{small}
@@ -637,6 +637,9 @@ Foram identificados alguns requisitos não-funcionais. Logo abaixo algumas tabel
 % ---
 \chapter*[Conclusão]{Conclusão}
 \addcontentsline{toc}{chapter}{Conclusão}
+
+Com a realização deste trabalho, foi possível identificar na análise técnica elaborada nos três softwares vantagens como: identificação de requisitos funcionais e não-funcionais que possam ser agregado a um único software, adaptando algumas funcionalidades de melhor desempenho existentes dos softwares analisados no software proposto para ser desenvolvido, com isso diminuindo a probabilidade de cometer erros que softwares já existentes comentam, desenvolvendo um produto que atenda ao máximo as necessidades do cliente, garantido mais satisfação e qualidade aos clientes.
+Como proposta para trabalhos futuros, pretende-se desenvolver Interfaces da aplicação, visando melhor organização das informações colhida durante esse trabalho. Além disso, realizar a implementação mobile e a integração de outras etapas disponíveis como, por exemplo, o gerenciamento de estoque, acompanhamento de clientes entre outros.
 
 %\lipsum[31-33]
 
